@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border selection:bg-accent-purple/30 selection:text-white;
+  }
+  
+  body {
+    @apply bg-dark-bg text-foreground font-sans antialiased;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@layer components {
+  .glassmorphism {
+    @apply backdrop-blur-lg bg-white/5 border border-white/10 rounded-lg;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-heading font-bold mb-6 text-white;
+  }
+  
+  .section-subtitle {
+    @apply text-xl font-medium mb-4 text-white/90;
+  }
+  
+  .badge {
+    @apply px-3 py-1 text-xs rounded-full bg-dark-highlight text-white/80 font-medium;
+  }
+  
+  .badge-accent {
+    @apply px-3 py-1 text-xs rounded-full bg-accent-purple/20 text-accent-purple font-medium;
+  }
+  
+  .card {
+    @apply bg-dark-card rounded-lg p-6 transition-all duration-300 hover:shadow-lg hover:shadow-accent-purple/5;
+  }
+  
+  .nav-link {
+    @apply relative py-2 px-3 text-sm font-medium text-white/70 hover:text-white transition-colors
+           after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-accent-purple 
+           after:transition-all after:duration-300 hover:after:w-full;
+  }
+  
+  .nav-link.active {
+    @apply text-white after:w-full;
+  }
+  
+  .button-primary {
+    @apply px-6 py-2.5 rounded-md bg-accent-purple text-white font-medium 
+           transition-all duration-300 hover:bg-accent-purple/90 focus:ring-2 
+           focus:ring-accent-purple/50 focus:outline-none;
+  }
+  
+  .button-outline {
+    @apply px-6 py-2.5 rounded-md border border-white/20 text-white font-medium 
+           transition-all duration-300 hover:bg-white/5 focus:ring-2 focus:ring-white/20 
+           focus:outline-none;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-accent-purple to-accent-cyan bg-clip-text text-transparent;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+  
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+}
