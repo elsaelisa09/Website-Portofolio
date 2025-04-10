@@ -32,7 +32,7 @@ const Footer = () => {
             </button>
             
             <p className="text-white/60 text-sm">
-              © {new Date().getFullYear()} Alex Chen. All rights reserved.
+              © {new Date().getFullYear()} Elsa. All rights reserved.
             </p>
           </div>
         </div>

@@ -32,7 +32,7 @@ const HeroSection = () => {
             <div className="flex flex-col items-center gap-6 opacity-0 animate-fade-in animation-delay-200">
               <div className="flex flex-col sm:flex-row gap-4 w-full justify-center">
                 <a href="#projects" className="button-primary">View My Work</a>
-                <a href="#contact" className="button-outline">Get In Touch</a>
+                <a href="#contact" className="button-outline">Say Hello</a>
               </div>
               
               {/* Centered Scroll Down */}

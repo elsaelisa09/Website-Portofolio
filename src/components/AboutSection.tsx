@@ -29,13 +29,15 @@ const AboutSection = () => {
             <div className="space-y-4 text-white/80">
               <p>
                 I am a 6th-semester undergraduate student majoring in Informatics Engineering at ITERA and a recipient of the 2024 Pertamina Sobat Bumi Scholarship.
+                I am deeply passionate and committed to learning about technology and information systems. Currently, I am focused on sharpening my skills in Artificial Intelligence and Data Engineering, while also applying my UI/UX design expertise using Figma.
+                I continuously strive to expand my knowledge, stay updated with the latest technological trends, and actively engage in innovative projects to grow within the tech industry.
               </p>
-              <p>
+              {/* <p>
                 I am deeply passionate and committed to learning about technology and information systems. Currently, I am focused on sharpening my skills in Artificial Intelligence and Data Engineering, while also applying my UI/UX design expertise using Figma.
               </p>
               <p>
                 I continuously strive to expand my knowledge, stay updated with the latest technological trends, and actively engage in innovative projects to grow within the tech industry.
-              </p>
+              </p> */}
             </div>
             
             <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Send, Mail, Linkedin, Github, Twitter } from 'lucide-react';
+import { Send, Mail, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
 import { useToast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
@@ -38,16 +38,16 @@ const ContactSection = () => {
   };
   
   const socialLinks = [
-    { icon: Mail, href: "mailto:alex@example.com", label: "Email" },
-    { icon: Linkedin, href: "https://linkedin.com/in/username", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/username", label: "GitHub" },
-    { icon: Twitter, href: "https://twitter.com/username", label: "Twitter" }
+    { icon: Mail, href: "mailto:elsaelisayohana05@gmail.com", label: "Email" },
+    { icon: Linkedin, href: "www.linkedin.com/in/elsa-elisa-yohana-sianturi-054668287", label: "LinkedIn" },
+    { icon: Github, href: "https://github.com/elsaelisa09", label: "GitHub" },
+    { icon: Instagram, href: "https://instagram.com/elsaelisaaaaa", label: "Instagram" }
   ];
 
   return (
     <section id="contact" className="py-20 bg-dark-highlight">
       <div className="container">
-        <h2 className="section-title opacity-0 animate-fade-in">Get In Touch</h2>
+        <h2 className="section-title opacity-0 animate-fade-in">Say Hello</h2>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div className="opacity-0 animate-fade-in animation-delay-100">
@@ -92,7 +92,7 @@ const ContactSection = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 rounded-md bg-dark-bg border border-white/10 text-white focus:border-accent-purple focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-2 rounded-md bg-dark-bg border border-white/10 text-white italic focus:border-accent-purple focus:outline-none transition-colors duration-300"
                   placeholder="Your name"
                 />
               </div>
@@ -106,7 +106,7 @@ const ContactSection = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 rounded-md bg-dark-bg border border-white/10 text-white focus:border-accent-purple focus:outline-none transition-colors duration-300"
+                  className="w-full px-4 py-2 rounded-md bg-dark-bg border italic border-white/10 text-white focus:border-accent-purple focus:outline-none transition-colors duration-300"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -120,7 +120,7 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full px-4 py-2 rounded-md bg-dark-bg border border-white/10 text-white focus:border-accent-purple focus:outline-none transition-colors duration-300 resize-none"
+                  className="w-full px-4 py-2 rounded-md bg-dark-bg border border-white/10 text-white italic focus:border-accent-purple focus:outline-none transition-colors duration-300 resize-none"
                   placeholder="Tell me about your project or inquiry..."
                 ></textarea>
               </div>

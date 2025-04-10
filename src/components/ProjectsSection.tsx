@@ -27,12 +27,12 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: "AI Image Generator",
-      description: "A machine learning-powered tool that generates unique artwork based on text descriptions using advanced neural networks.",
-      image: "https://placehold.co/600x400/1e1e1e/ffffff?text=AI+Image+Generator",
-      tags: ["AI", "Machine Learning", "Creative Tools"],
-      link: "#",
-      github: "#"
+      title: "RentUrStyle",
+      description: "RentUrStyle is a web platform developed by Group 14 for LKKMO HMIF, aimed at helping pop culture enthusiasts and traditional fashion lovers easily rent their dream costumes. As the UI/UX Designer, I focused on creating an intuitive and visually appealing interface to ensure a smooth and enjoyable user experience.",
+      image: "/renturstyle.png",
+      tags: ["UI/UX", "Website", "E-commerce", "Prototyping"],
+      link: "https://drive.google.com/drive/folders/1x9IXwosPt0vb6h6hfSDrGP-y76Y4XsmV?usp=sharing",
+      figma: "https://www.figma.com/design/22NGllyMUXjOsGs7Xi9gXE/TEAM-DEV-ONE-UI-UX?node-id=1-6&t=iR3xswycS70tXset-1"
     },
     {
       id: 3,
