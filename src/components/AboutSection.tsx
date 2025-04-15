@@ -10,7 +10,7 @@ const AboutSection = () => {
     },
     { 
       category: 'AI & ML',
-      items: ['TensorFlow','Natural Language Processing', 'Python', 'Prompt Engineering', 'NumPy', 'Pandas', 'Matplotlib']
+      items: ['TensorFlow','NLP', 'Python', 'Prompt Engineering', 'NumPy', 'Pandas', 'Matplotlib']
     },
     { 
       category: 'Data Analysis',
@@ -65,9 +65,9 @@ const AboutSection = () => {
           </div>
           
           <div className="lg:col-span-1  opacity-0 animate-fade-in animation-delay-200">
-            <h3 className="section-subtitle">Skills & Expertise</h3>
+            <h3 className="section-subtitle">Skills</h3>
             
-            <div className="space-y-6">
+            <div className="space-y-4">
               {skills.map((skillGroup, index) => (
                 <div key={index} className="card">
                   <h4 className="text-lg font-medium mb-3">{skillGroup.category}</h4>

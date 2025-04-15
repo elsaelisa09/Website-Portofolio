@@ -24,7 +24,7 @@ const HeroSection = () => {
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold mb-6 leading-tight">
                 Creating <span className="text-gradient">meaningful</span> digital experiences
               </h1>
-              <p className="text-lg md:text-xl text-white/70 italic max-w-2xl mb-8">
+              <p className="text-lg md:text-xl text-white/50 italic max-w-2xl mb-8">
                 Hi, I'm Elsa. I design intuitive interfaces, explore AI possibilities, and translate data into actionable insights.
               </p>
             </div>

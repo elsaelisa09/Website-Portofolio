@@ -1,73 +1,58 @@
-# Welcome to your Lovable project
+# Portfolio Web – Elsa Elisa Yohana Sianturi
 
-## Project info
+Selamat datang di **Portfolio Web** saya! Proyek ini dibuat untuk menampilkan profil, portofolio, dan pencapaian saya. Aplikasi ini dibangun menggunakan **Vite**, **TypeScript**, **React**, **shadcn-ui**, dan **Tailwind CSS**.
 
-**URL**: https://lovable.dev/projects/b00c38db-d775-4ab5-b210-65b0ac0ea300
+## Cuplikan Tampilan
 
-## How can I edit this code?
+![Screenshot Portfolio](/public/webportofolio.png)  
+*Contoh tampilan web dengan tema gelap yang modern dan responsif.*
 
-There are several ways of editing your application.
+## Deskripsi Proyek
 
-**Use Lovable**
+- **Nama:** Elsa Elisa Yohana Sianturi
+- **Bidang:** UI/UX Designer | AI Enthusiast | Data Analyst  
+- **Tagline:** "Menciptakan pengalaman digital yang bermakna."
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/b00c38db-d775-4ab5-b210-65b0ac0ea300) and start prompting.
+Proyek ini menampilkan:
+- Halaman beranda dengan perkenalan
+- Daftar proyek dan portofolio
+- Kontak dan media sosial
 
-Changes made via Lovable will be committed automatically to this repo.
+## Fitur Utama
 
-**Use your preferred IDE**
+1. **Desain Responsif:** Tampilan optimal untuk desktop, tablet, dan smartphone.  
+2. **Interaksi Modern:** Komponen interaktif berbasis React.  
+3. **Performance Tinggi:** Dibangun dengan Vite untuk pengembangan cepat dan build yang ringan.  
+4. **Modular Component:** Penggunaan shadcn-ui dan Tailwind CSS membuat styling dan kustomisasi menjadi mudah.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Teknologi yang Digunakan
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- **Vite:** Build tool yang cepat.
+- **TypeScript:** Menambahkan dukungan tipe statis untuk JavaScript.
+- **React:** Library JavaScript untuk membangun user interface.
+- **shadcn-ui:** Kumpulan komponen UI siap pakai yang mudah dikustomisasi.
+- **Tailwind CSS:** Framework CSS _utility-first_ untuk styling yang efisien.
 
-Follow these steps:
+## Instalasi dan Penggunaan
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Pastikan  sudah menginstal [Node.js](https://nodejs.org/) (disarankan versi LTS).
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 1. Kloning Repository
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+git clone https://github.com/username/portfolio-web.git
+cd portfolio-web
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 2. Install Depensi
+npm install
+
+### Jalankan Development Server
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+##Lisensi
+Proyek ini dilisensikan di bawah MIT License. Silakan gunakan, modifikasi, dan bagikan sesuai kebutuhan.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
 
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/b00c38db-d775-4ab5-b210-65b0ac0ea300) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+message: "Terima kasih telah mengunjungi Portfolio Web saya!"
+signature: "Salam, Elsa Elisa Yohana Santuri"
+quote: "Design is thinking made visual. – Saul Bass"
