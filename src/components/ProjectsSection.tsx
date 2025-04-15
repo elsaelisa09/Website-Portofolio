@@ -36,7 +36,7 @@ const ProjectsSection = () => {
       id: 3,
       title: "KiddieSafe by Intuify",
       description: "KiddieSafe is a digital safety application designed to protect children from harmful online content and cyberbullying through AI-based content filtering, mood tracking, and interactive digital literacy education. Developed using Figma and Maze, the prototype was evaluated through usability testing and showed high user satisfaction, supporting safer and more responsible internet.",
-      image: "/kiddiesafe.png",
+      image: "/safekids2.png",
       tags: ["UI/UX", "Dashboard", "Mobile App", "Prototyping"],
       link: "https://drive.google.com/drive/folders/1nDOMvPXt6VCwuWZpiMeWuDwMCaB3XCB2?usp=sharing", 
       figma: "https://www.figma.com/proto/VkM0yzZ0gVXpZWHqauSNxR/Intuify---KiddieSafe?node-id=43-9&p=f&t=MJgnrSzD5qvbecYO-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A5&starting-point-node-id=36%3A420&show-proto-sidebar=1", 
