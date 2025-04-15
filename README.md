@@ -37,22 +37,14 @@ Proyek ini menampilkan:
 
 Pastikan  sudah menginstal [Node.js](https://nodejs.org/) (disarankan versi LTS).
 
-### 1. Kloning Repository
-
 ```bash
 git clone https://github.com/username/portfolio-web.git
 cd portfolio-web
 
-### 2. Install Depensi
+2. Install Depensi
 npm install
 
-### Jalankan Development Server
+Jalankan Development Server
 npm run dev
 
-##Lisensi
-Proyek ini dilisensikan di bawah MIT License. Silakan gunakan, modifikasi, dan bagikan sesuai kebutuhan.
 
-
-message: "Terima kasih telah mengunjungi Portfolio Web saya!"
-signature: "Salam, Elsa Elisa Yohana Santuri"
-quote: "Design is thinking made visual. – Saul Bass"
