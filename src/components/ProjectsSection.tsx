@@ -35,7 +35,7 @@ const ProjectsSection = () => {
     {
       id: 3,
       title: "KiddieSafe by Intuify",
-      description: "KiddieSafe is a digital safety application designed to protect children from harmful online content and cyberbullying through AI-based content filtering, mood tracking, and interactive digital literacy education. Developed using Figma and Maze, the prototype was evaluated through usability testing and showed high user satisfaction, supporting safer and more responsible internet use for children and their parents.",
+      description: "KiddieSafe is a digital safety application designed to protect children from harmful online content and cyberbullying through AI-based content filtering, mood tracking, and interactive digital literacy education. Developed using Figma and Maze, the prototype was evaluated through usability testing and showed high user satisfaction, supporting safer and more responsible internet.",
       image: "/kiddiesafe.png",
       tags: ["UI/UX", "Dashboard", "Mobile App", "Prototyping"],
       link: "https://drive.google.com/drive/folders/1nDOMvPXt6VCwuWZpiMeWuDwMCaB3XCB2?usp=sharing", 
@@ -61,7 +61,7 @@ const ProjectsSection = () => {
     {
       id: 6,
       title: "Green Legacy: 100 Trembesi & Bungur Trees for a Sustainable ITERA",
-      description: "As a Pertamina Sobat Bumi Scholarship awardee, I initiated a tree-planting project at the Institut Teknologi Sumatera (ITERA), planting 100 trembesi (rain tree) and bungur (Lagerstroemia) seedlings. This effort serves as a tangible commitment to environmental conservation, combating climate change through carbon sequestration, and enhancing campus biodiversity. The project also engaged students and local communities, fostering collective responsibility for sustainable ecosystems.",
+      description: "As a Pertamina Sobat Bumi Scholarship awardee, I initiated a tree-planting project at the Institut Teknologi Sumatera (ITERA), planting 100 trembesi (rain tree) and bungur (Lagerstroemia) seedlings. This effort serves as a tangible commitment to environmental conservation, combating climate change through carbon sequestration, and enhancing campus biodiversity.",
       image: "/penanamanpohon.png",
       tags: ["MyActivity", "Productivity", "Pertamina", "SobatBumi"],
       link: "https://www.instagram.com/p/DF4gXkXT06T/?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==",
@@ -106,7 +106,10 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20">
       <div className="container">
-        <h2 className="section-title opacity-0 animate-fade-in">Projects</h2>
+        {/* Update judul "Projects" menjadi "MyWork" */}
+        <h2 className="text-4xl font-bold text-center text-white mb-8">
+          My<span className="text-accent-purple">Work</span>
+        </h2>
         
         <div className="flex flex-wrap justify-center gap-2 mb-10 opacity-0 animate-fade-in animation-delay-100">
           {filters.map(filter => (

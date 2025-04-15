@@ -5,7 +5,7 @@ Selamat datang di **Portfolio Web** saya! Proyek ini dibuat untuk menampilkan pr
 ## Cuplikan Tampilan
 
 ![Screenshot Portfolio](/public/webportofolio.png)  
-*Contoh tampilan web dengan tema gelap yang modern dan responsif.*
+
 
 ## Deskripsi Proyek
 
