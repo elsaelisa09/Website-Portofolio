@@ -12,6 +12,32 @@ interface Project {
   figma?: string;
 }
 
+const ReadMore = ({ text, maxSentences = 3 }: { text: string; maxSentences?: number }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const sentences = text.split(/(?<=[.!?])\s+/); // Memecah berdasarkan akhir kalimat
+  const shouldTruncate = sentences.length > maxSentences;
+  const displayText = isExpanded || !shouldTruncate
+    ? text
+    : sentences.slice(0, maxSentences).join(' ') + '...';
+
+  return (
+    <div className="text-white/70 text-sm mb-4">
+      {displayText}
+      {shouldTruncate && (
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="ml-2 text-accent-purple underline focus:outline-none"
+        >
+          {isExpanded ? 'Read less' : 'Read more'}
+        </button>
+      )}
+    </div>
+  );
+};
+
+
+
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   
@@ -19,7 +45,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: "Awardee of the 2024 Pertamina Sobat Bumi Scholarship",
-      description: " As a recipient of the 2024 Pertamina Sobat Bumi Scholarship, I actively contribute to environmental organizations with a focus on energy sustainability. My initiatives include advocating for renewable energy transition, organizing educational workshops on energy efficiency, and participating in community projects such as solar panel installations and urban greening.",
+      description: "As a recipient of the 2024 Pertamina Sobat Bumi Scholarship, I actively contribute to environmental organizations with a focus on energy sustainability. My initiatives include advocating for renewable energy transition, organizing educational workshops on energy efficiency, and participating in community projects such as solar panel installations and urban greening.",
       image: "/sobi.png",
       tags: ["MyActivity", "Pertamina", "Scholarship", "ITERA"],
       link: "https://www.instagram.com/sobatbumi.lampung?utm_source=ig_web_button_share_sheet&igsh=ODdmZWVhMTFiMw==", 
@@ -77,7 +103,7 @@ const ProjectsSection = () => {
     {
       id: 8,
       title: "FitGuide ITERA | UI/UX Design for an Integrated Gym Facility Guide",
-      description: "FitGuide ITERA is a user-centered mobile app designed to optimize gym usage for students at Institut Teknologi Sumatera (ITERA), solving key pain points like unclear workout goals, lack of equipment tutorials, and disjointed facility schedules. ",
+      description: "FitGuide ITERA is a user-centered mobile app designed to optimize gym usage for students at Institut Teknologi Sumatera (ITERA), solving key pain points like unclear workout goals, lack of equipment tutorials, and disjointed facility schedules.",
       image: "/fitguide.png",
       tags: ["UI/UX", "FitnessApp", "MobileApp", "Prototyping"],
       link: "https://drive.google.com/drive/folders/1Kiz-kpxIxcxKD5r0KMh3BDM_3TRUWMNj?usp=sharing",
@@ -106,7 +132,6 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20">
       <div className="container">
-        {/* Update judul "Projects" menjadi "MyWork" */}
         <h2 className="text-4xl font-bold text-center text-white mb-8">
           My<span className="text-accent-purple">Work</span>
         </h2>
@@ -141,7 +166,6 @@ const ProjectsSection = () => {
                   className="w-full h-64 md:h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-accent-purple/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                  {/* Figma Link */}
                   {project.figma && (
                     <a 
                       href={project.figma} 
@@ -155,7 +179,6 @@ const ProjectsSection = () => {
                     </a>
                   )}
                   
-                  {/* Regular External Link */}
                   {project.link && (
                     <a 
                       href={project.link} 
@@ -169,7 +192,6 @@ const ProjectsSection = () => {
                     </a>
                   )}
                   
-                  {/* GitHub Link */}
                   {project.github && (
                     <a 
                       href={project.github} 
@@ -187,7 +209,7 @@ const ProjectsSection = () => {
               
               <div className="p-4">
                 <h3 className="font-medium text-lg mb-2">{project.title}</h3>
-                <p className="text-white/70 text-sm mb-4">{project.description}</p>
+                <ReadMore text={project.description} maxSentences={3} />
                 
                 <div className="flex flex-wrap gap-2">
                   {project.tags.map((tag, tagIndex) => (
